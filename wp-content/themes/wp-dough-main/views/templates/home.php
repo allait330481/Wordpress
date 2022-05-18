@@ -10,18 +10,37 @@ if(!$buttonGroup){
 
 <div class="home">
 
-    <?php if($title): ?>
-        <h1><?php echo $title; ?></h1>
-    <?php endif; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Title of the document</title>
+</head>
+<body>
 
-    <hr>
+<header>
+        <a href="#" class="logo">Wonder</a>
+        <nav class="navi">
+            <a href="index.html" class="active">Home</a>
+            <a href="">About Us</a>
+           
+        </nav>
+    </header>
 
-    <?php if($content): ?>
-        <?php echo $content; ?>
-    <?php endif; ?>
+    <section class="main">
+        <div>
+            <h3>I build websites and ios-android application</h3>
+            <a href="#projects" class="main-btn">View my work</a>
+            <div class="social-icons">
+            </div>
+        </div>
+    </section>
 
-    <?php if($buttonGroup): ?>
-        <?php render('views/molecules/button-collection.php', compact('buttonGroup')); ?>
-    <?php endif; ?>
+
+
+
+</body>
+</html>
+
+
 
 </div>

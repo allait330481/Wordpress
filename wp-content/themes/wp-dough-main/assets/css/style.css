@@ -1,16 +1,55 @@
-/* MAIN STYLE SHEET (comment can be removed) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 
-
-footer {
-    position:absolute;
-    bottom:0;
 }
 
-
-/* TEMPLATE STYLING */
-
-/* Custom */
-.page-template-template-custom{
-    background-color: red;
+header {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+    background-color: #611427;
 }
-/* End Custom */
+
+.logo {
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+    color: #fff;
+    transition: 0.7s ease;
+}
+
+.logo:hover {
+    color: #fff;
+    transform: scale(1.1);
+    text-shadow: 1px 1px 2px #000;
+
+}
+
+.navi a {
+    color: #862928;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 10px 20px 10px;
+    text-align: center;
+}
+
+.navi a.active {
+    background-color: #fff;
+    border-radius: 1.5rem;
+    color: #000;
+}
+
+.navi a:hover {
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+    transition: 0.7s ease;
+}

@@ -9,3 +9,8 @@ $adminButton = ['url' => get_home_url() . '/wp-admin', 'title' => 'Klik om in de
 $buttonGroup = [$homeButton, $adminButton];
 
 render('views/templates/home.php', ['title' => $title, 'content' => $content, 'buttonGroup' => $buttonGroup]);
+
+
+
+
+
